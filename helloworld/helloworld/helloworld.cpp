@@ -4,33 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int triple(int nombre)
+{
+	int resultat;
+	resultat = nombre * 3;
+	return printf("%d", resultat);
+}
+
 int main(int argc, char *argv[])
 {
-    int choix = 0;
-
-    printf("=== Menu ===\n1. Royal Cheese\n2.Mc Deluxe\n3. Mc Bacon\n4. Big Mac\nVotre choix ?");
-    scanf_s("%d", &choix);
-
-    switch (choix)
-    {
-    case 1:
-        printf("Royal Cheese");
-        break;
-    case 2:
-        printf("Mc Deluxe");
-        break;
-    case 3:
-        printf("Mc Bacon");
-        break;
-    case 4:
-        printf("Big Mac");
-        break;
-    default:
-        printf("Ce n'est pas au menu");
-        break;
-    }
-
-    return 0;
+	int input = 0; 
+	printf("Veuillez rentrer un chiffre : ");
+	scanf_s("%d", &input);
+	triple(input);
+	return 0;
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
