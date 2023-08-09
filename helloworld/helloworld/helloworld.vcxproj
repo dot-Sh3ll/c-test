@@ -127,7 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="helloworld.cpp" />
+    <ClCompile Include="controller.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="model.c" />
+    <ClCompile Include="view.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="controller.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="model.h" />
+    <ClInclude Include="view.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
